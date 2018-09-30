@@ -3,7 +3,6 @@ import os
 import pandas as pd
 
 DATA_URL = 'https://data.cityofchicago.org/api/views/ijzp-q8t2/rows.csv?accessType=DOWNLOAD'
-INDEX = 'Date Occurred'
 
 
 def get_url_data(filename='data/Crime_Data_from_2010_to_Present.csv', url=DATA_URL, force_download=False):
@@ -28,10 +27,24 @@ def get_url_data(filename='data/Crime_Data_from_2010_to_Present.csv', url=DATA_U
         urlretrieve(URL, filename)
 
     print('...loading csv')
-    data = pd.read_csv(filename, index_col= INDEX)
+    data = pd.read_csv(filename)
+    
+    # convert time to string from int
+    data['Time Occurred'] = data['Time Occurred'].apply(str)
 
-    try:
-        data.index = pd.to_datetime(data.index, format='%m/%d/%Y')
+    # filter strings of length 4 
+    pattern = r'^\w{4,}$'
+    time_filter = data['Time Occurred'].str.contains(pattern)
+
+    # filter out bad time strings 
+    data = data[time_filter]
+
+    data['Date'] = data['Date Reported'] + " " +  data['Time Occurred']
+    data.set_index('Date', inplace=True)
+    
+    try: 
+        data.index = pd.to_datetime(data.index,  format='%m/%d/%Y %H%M')
     except TypeError:
         data.index = pd.to_datetime(data.index)
+
     return data
