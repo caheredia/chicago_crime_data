@@ -3,6 +3,7 @@ import os
 import pandas as pd
 
 DATA_URL = 'https://data.cityofchicago.org/api/views/ijzp-q8t2/rows.csv?accessType=DOWNLOAD'
+INDEX = 'Date Occurred'
 
 
 def get_url_data(filename='data/Crime_Data_from_2010_to_Present.csv', url=DATA_URL, force_download=False):
@@ -27,7 +28,7 @@ def get_url_data(filename='data/Crime_Data_from_2010_to_Present.csv', url=DATA_U
         urlretrieve(URL, filename)
 
     print('...loading csv')
-    data = pd.read_csv(filename, index_col='Date received')
+    data = pd.read_csv(filename, index_col= INDEX)
 
     try:
         data.index = pd.to_datetime(data.index, format='%m/%d/%Y')
