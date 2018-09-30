@@ -2,10 +2,10 @@ from urllib.request import urlretrieve
 import os
 import pandas as pd
 
-DATA_URL = 'https://data.consumerfinance.gov/api/views/s6ew-h6mp/rows.csv?accessType=DOWNLOAD'
+DATA_URL = 'https://data.cityofchicago.org/api/views/ijzp-q8t2/rows.csv?accessType=DOWNLOAD'
 
 
-def get_url_data(filename='data/ccd.csv', url=DATA_URL, force_download=False):
+def get_url_data(filename='data/Crime_Data_from_2010_to_Present.csv', url=DATA_URL, force_download=False):
     '''Download and cache the Fremont data
 
     Parameters
