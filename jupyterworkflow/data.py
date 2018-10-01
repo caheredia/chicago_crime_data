@@ -32,8 +32,8 @@ def get_url_data(filename='data/Crime_Data_from_2010_to_Present.csv', url=DATA_U
     # convert time to string from int
     data['Time Occurred'] = data['Time Occurred'].apply(str)
 
-    # filter strings of length 4 
-    pattern = r'^\w{4,}$'
+    # filter strings of length 3
+    pattern = r'^\w{3,}$'
     time_filter = data['Time Occurred'].str.contains(pattern)
 
     # filter out bad time strings 
