@@ -26,7 +26,7 @@ Project Organization
     │
     ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
     │
-    ├── notebooks          <- Jupyter notebooks.                                             
+    ├── .ipynb files       <- Jupyter notebooks.                                             
     │
     ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
     │
