@@ -26,11 +26,7 @@ Project Organization
     │
     ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
     │
-    │
-    │
-    ├── notebooks          <- Jupyter notebooks.
-    │                         
-    │                         
+    ├── notebooks          <- Jupyter notebooks.                                             
     │
     ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
     │
@@ -57,8 +53,6 @@ Project Organization
         │
         └── visualization  <- Scripts to create exploratory and results oriented visualizations
             └── visualize.py
-
-
 
 --------
 
