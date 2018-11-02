@@ -5,7 +5,7 @@ This dataset reflects reported incidents of crime (with the exception of murders
 
 An exploration of reported Chicago Crime data
 
-Publishers of data
+Data Publishers
 ==============================
 - https://catalog.data.gov/dataset/crimes-2001-to-present-398a4
 - https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present-Map/c4ep-ee5m
