@@ -19,3 +19,4 @@ def test_version():
                 required_major, sys.version))
     else:
         print(">>> Development environment passes all tests!")
+    assert system_major == required_major
