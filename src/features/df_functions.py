@@ -38,8 +38,7 @@ def convert_time(data, column_name='Time Occurred'):
 
 
 def str_pad(time_stamp):
-    '''
-    Pads the begining of string with 0 until length 4 is reached.
+    '''Pads the begining of string with 0 until length 4 is reached.
 
     Parameters
     ----------
