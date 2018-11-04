@@ -1,7 +1,9 @@
-chicago_crime_data
+Modules
 ==================
 
-.. toctree::
-   :maxdepth: 4
+.. autosummary::
+    :toctree: _autosummary
 
-   src
+    data.get_data
+    features.df_functions
+    visualization.visualize

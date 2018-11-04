@@ -43,7 +43,11 @@ clean:
 	-rm -rf $(BUILDDIR)/*
 
 html:
+	cp ../README.md README.md
+	@echo
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
+	@echo
+	@echo "Copied README.md"
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
 

@@ -6,23 +6,22 @@
 Chicago Crime Data documentation
 ==============================================
 
-Documentation for Chicago Crime Data analysis.
+This dataset reflects reported incidents of crime (with the exception of murders where data exists for each victim) that occurred in the City of Chicago from 2001 to present, minus the most recent seven days. Data is extracted from the Chicago Police Department's CLEAR (Citizen Law Enforcement Analysis and Reporting) system.
+
+An exploration of reported Chicago Crime data
 
 Contents:
 
 .. toctree::
    :maxdepth: 2
 
-   getting-started
-   commands
+
+   README
    modules
 
 
 
-
-Indices and tables
-==================
-
+Index
+====================
 * :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`
