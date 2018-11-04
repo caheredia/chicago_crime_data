@@ -1,0 +1,9 @@
+Used cookie cutter to establish file tree
+install sphinx and necessary modules
+autoformat modules using these instructions
+https://romanvm.pythonanywhere.com/post/autodocumenting-your-python-code-sphinx-part-ii-6/
+
+upload to github pages either in through docs folder, but this gets messy
+Another option is to upload docs to gh-pages branch, which then renders on github pages.
+And finally a third alternative is to have the docs rendered at readthedocs.org,
+but then you have to deal with another service. 
