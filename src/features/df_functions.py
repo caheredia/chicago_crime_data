@@ -4,21 +4,22 @@ import pandas as pd
 def convert_time(data, column_name='Time Occurred'):
     '''Formats the time column to length of 4.
 
-    Pads the begining of Time stamp to length of 4. Creates a new column with full stamp as a timestamp index.
+    Pads the begining of Time stamp to length of 4.
+    Converts column_name to string.
+    Creates a new column with full stamp as a timestamp index.
 
     Parameters
     ----------
-    filename : string (optional)
-        location to save the data
-    url : string (optional)
-        web location of the data
-    force_download : bool (optional)
-        if TRUE, then force data download
+    data : pandas.DataFrame
+        dataframe to modify
+    column_name : string (optional)
+        column containing hourly data
+
 
     Returns
     -------
     data : pandas.DataFrame
-        Chicago crime stamps.
+        Original dataframe with Chicago crime time stamps as DateTimeIndex.
     '''
     # convert time to string from int
     data[column_name] = data[column_name].apply(str)
@@ -40,14 +41,13 @@ def convert_time(data, column_name='Time Occurred'):
 def str_pad(time_stamp):
     '''Pads the begining of string with 0 until length 4 is reached.
 
+    If string is less than four characters, than a 0 is appended to head of string.
+    This is done until string is at least 4 digits long. 
+
     Parameters
     ----------
     time_stamp : string
        string for
-    url : string (optional)
-        web location of the data
-    force_download : bool (optional)
-        if TRUE, then force data download
 
     Returns
     -------

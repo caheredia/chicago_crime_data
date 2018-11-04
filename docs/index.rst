@@ -10,6 +10,8 @@ This dataset reflects reported incidents of crime (with the exception of murders
 
 An exploration of reported Chicago Crime data
 
+Code on `github <https://github.com/caheredia/chicago_crime_data/>`_
+
 Contents:
 
 .. toctree::
@@ -21,11 +23,11 @@ Contents:
 
 Analysis
 ====================
-Notebook contents:
+Jupyter notebook contents:
 
 .. toctree::
    :maxdepth: 2
-   
+
    0.1-cristian-Chicago_Crime.ipynb
 
 

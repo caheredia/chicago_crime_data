@@ -192,8 +192,8 @@
 <div class="section" id="project-organization">
 <span id="project-organization"></span><h2>Project Organization<a class="headerlink" href="#project-organization" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>├── LICENSE
-├── Makefile           &lt;- Makefile with commands like `make test` or `make train`
-├── README.md          &lt;- The top-level README for developers using this project.
+├── Makefile           &lt;- Makefile with commands like `make test` or `make data`.
+├── README.md          &lt;- The top-level README.
 ├── data
 │   ├── external       &lt;- Data from third party sources.
 │   ├── interim        &lt;- Intermediate data that has been transformed.
@@ -202,30 +202,24 @@
 │
 ├── docs               &lt;- A default Sphinx project; see sphinx-doc.org for details
 │
-├── .ipynb files       &lt;- Jupyter notebooks.                                             
+├── .ipynb files       &lt;- Jupyter notebooks, analysis files.           
 │
 ├── references         &lt;- Data dictionaries, manuals, and all other explanatory materials.
 │
 ├── reports            &lt;- Generated analysis as HTML, PDF, LaTeX, etc.
 │   └── figures        &lt;- Generated graphics and figures to be used in reporting
 │
-├── requirements.txt   &lt;- The requirements file for reproducing the analysis environment, e.g.
-│                         generated with `pip freeze &gt; requirements.txt`
+├── environment.yml   &lt;- The environment file for reproducing the analysis environment.
+│                      
 │
-├── setup.py           &lt;- makes project pip installable (pip install -e .) so src can be imported
 ├── src                &lt;- Source code for use in this project.
     ├── __init__.py    &lt;- Makes src a Python module
     │
     ├── data           &lt;- Scripts to download or generate data
-    │   └── make_dataset.py
+    │   └── get_data.py
     │
     ├── features       &lt;- Scripts to turn raw data into features for modeling
-    │   └── build_features.py
-    │
-    ├── models         &lt;- Scripts to train models and then use trained models to make
-    │   │                 predictions
-    │   ├── predict_model.py
-    │   └── train_model.py
+    │   └── df_functions.py
     │
     └── visualization  &lt;- Scripts to create exploratory and results oriented visualizations
         └── visualize.py
@@ -255,7 +249,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 
+        &copy; Copyright 2018, Cristian Heredia
 
     </p>
   </div> 

@@ -10,7 +10,7 @@ def get_url_data(filename='data/raw/Crime_Data_from_2010_to_Present.csv', url=DA
     Download and cache data from publisher.
 
     Verifies that data exists on local machine. If not, then downloads data.
-    Can be foreced to download with parameter force_downloader.
+    Can be forced to download with parameter force_downloader.
 
     Parameters
     ----------
@@ -24,7 +24,7 @@ def get_url_data(filename='data/raw/Crime_Data_from_2010_to_Present.csv', url=DA
     Returns
     -------
     data : pandas.DataFrame
-        The Fremont Bridge data
+        The downloaded data as dataframe. 
     '''
     if not os.path.exists(filename) or force_download:
         print('...downloading data')
