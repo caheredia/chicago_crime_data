@@ -33,6 +33,11 @@ sys.path.insert(0, os.path.join(os.path.abspath(os.path.dirname(os.path.dirname(
 extensions = ['sphinx.ext.napoleon', 'sphinx.ext.autodoc', 'sphinx.ext.autosummary',
               'sphinx.ext.viewcode', 'nbsphinx', 'sphinx.ext.mathjax', 'sphinx.ext.githubpages']
 
+# Include Python objects as they appear in source files
+## Default: alphabetically ('alphabetical')
+autodoc_member_order = 'bysource'
+# Default flags used by autodoc directives
+autodoc_default_flags = ['members', 'show-inheritance']
 # Generate autodoc stubs with summaries from code
 autosummary_generate = True
 # Add any paths that contain templates here, relative to this directory.
@@ -79,7 +84,7 @@ release = '0.1'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
-exclude_patterns = ['_build']
+exclude_patterns = ['build']
 
 # The reST default role (used for this markup: `text`) to use for all documents.
 # default_role = None

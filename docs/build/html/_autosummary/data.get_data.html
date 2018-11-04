@@ -190,11 +190,38 @@
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_url_data</span></code>([filename,&nbsp;url,&nbsp;force_download])</td>
+<tr class="row-odd"><td><a class="reference internal" href="#data.get_data.get_url_data" title="data.get_data.get_url_data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_url_data</span></code></a>([filename,&nbsp;url,&nbsp;force_download])</td>
 <td>Download and cache data from publisher.</td>
 </tr>
 </tbody>
 </table>
+<dl class="function">
+<dt id="data.get_data.get_url_data">
+<code class="descclassname">data.get_data.</code><code class="descname">get_url_data</code><span class="sig-paren">(</span><em>filename='data/raw/Crime_Data_from_2010_to_Present.csv'</em>, <em>url='https://data.cityofchicago.org/api/views/ijzp-q8t2/rows.csv?accessType=DOWNLOAD'</em>, <em>force_download=False</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/data/get_data.html#get_url_data"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#data.get_data.get_url_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Download and cache data from publisher.</p>
+<p>Verifies that data exists on local machine. If not, then downloads data.
+Can be forced to download with parameter force_downloader.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>filename</strong> (<em>string</em><em> (</em><em>optional</em><em>)</em>) – location to save the data</li>
+<li><strong>url</strong> (<em>string</em><em> (</em><em>optional</em><em>)</em>) – web location of the data</li>
+<li><strong>force_download</strong> (<em>bool</em><em> (</em><em>optional</em><em>)</em>) – if TRUE, then force data download</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>data</strong> – The downloaded data as dataframe.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">pandas.DataFrame</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
 </div>
 
 

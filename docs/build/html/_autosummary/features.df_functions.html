@@ -190,14 +190,61 @@
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">convert_time</span></code>(data[,&nbsp;column_name])</td>
+<tr class="row-odd"><td><a class="reference internal" href="#features.df_functions.convert_time" title="features.df_functions.convert_time"><code class="xref py py-obj docutils literal notranslate"><span class="pre">convert_time</span></code></a>(data[,&nbsp;column_name])</td>
 <td>Formats the time column to length of 4.</td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">str_pad</span></code>(time_stamp)</td>
+<tr class="row-even"><td><a class="reference internal" href="#features.df_functions.str_pad" title="features.df_functions.str_pad"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str_pad</span></code></a>(time_stamp)</td>
 <td>Pads the begining of string with 0 until length 4 is reached.</td>
 </tr>
 </tbody>
 </table>
+<dl class="function">
+<dt id="features.df_functions.convert_time">
+<code class="descclassname">features.df_functions.</code><code class="descname">convert_time</code><span class="sig-paren">(</span><em>data</em>, <em>column_name='Time Occurred'</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/features/df_functions.html#convert_time"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#features.df_functions.convert_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Formats the time column to length of 4.</p>
+<p>Pads the begining of Time stamp to length of 4.
+Converts column_name to string.
+Creates a new column with full stamp as a timestamp index.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>data</strong> (<em>pandas.DataFrame</em>) – dataframe to modify</li>
+<li><strong>column_name</strong> (<em>string</em><em> (</em><em>optional</em><em>)</em>) – column containing hourly data</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>data</strong> – Original dataframe with Chicago crime time stamps as DateTimeIndex.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">pandas.DataFrame</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="features.df_functions.str_pad">
+<code class="descclassname">features.df_functions.</code><code class="descname">str_pad</code><span class="sig-paren">(</span><em>time_stamp</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/features/df_functions.html#str_pad"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#features.df_functions.str_pad" title="Permalink to this definition">¶</a></dt>
+<dd><p>Pads the begining of string with 0 until length 4 is reached.</p>
+<p>If string is less than four characters, than a 0 is appended to head of string.
+This is done until string is at least 4 digits long.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>time_stamp</strong> (<em>string</em>) – string for</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><strong>new_string</strong> – padded string or original string</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
 </div>
 
 
