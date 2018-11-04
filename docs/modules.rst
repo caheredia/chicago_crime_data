@@ -1,4 +1,4 @@
-Modules
+Python Modules
 ==================
 
 .. autosummary::

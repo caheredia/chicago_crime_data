@@ -19,6 +19,15 @@ Contents:
    README
    modules
 
+Analysis
+====================
+Notebook contents:
+
+.. toctree::
+   :maxdepth: 2
+   
+   0.1-cristian-Chicago_Crime.ipynb
+
 
 
 Index
