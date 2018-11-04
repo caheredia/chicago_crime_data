@@ -30,8 +30,8 @@ sys.path.insert(0, os.path.join(os.path.abspath(os.path.dirname(os.path.dirname(
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = ['sphinx.ext.napoleon', 'sphinx.ext.autodoc',
-              'sphinx.ext.autosummary', 'sphinx.ext.viewcode', 'nbsphinx', 'sphinx.ext.mathjax']
+extensions = ['sphinx.ext.napoleon', 'sphinx.ext.autodoc', 'sphinx.ext.autosummary',
+              'sphinx.ext.viewcode', 'nbsphinx', 'sphinx.ext.mathjax', 'sphinx.ext.githubpages']
 
 # Generate autodoc stubs with summaries from code
 autosummary_generate = True
