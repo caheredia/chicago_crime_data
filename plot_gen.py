@@ -3,6 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+#plot days of week in sparkline graphs
 
 means = np.arange(10, 60, 10)
 sigma = 7
