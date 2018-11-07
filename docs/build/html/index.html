@@ -86,10 +86,10 @@
 <li class="toctree-l1"><a class="reference internal" href="modules.html">Python Modules</a></li>
 </ul>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="0.1-cristian-Chicago_Crime.html">Load data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="0.1-cristian-Chicago_Crime.html#PCA-analysis">PCA analysis</a></li>
-<li class="toctree-l1"><a class="reference internal" href="0.1-cristian-Chicago_Crime.html#Weekend-behaviors">Weekend behaviors</a></li>
-<li class="toctree-l1"><a class="reference internal" href="0.1-cristian-Chicago_Crime.html#Weekday-behaviors">Weekday behaviors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="0.1-cristian-Chicago_Crime.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="0.1-cristian-Chicago_Crime.html#Load-data">Load data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="0.1-cristian-Chicago_Crime.html#Visually-Explore-Data">Visually Explore Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="0.1-cristian-Chicago_Crime.html#Modeling">Modeling</a></li>
 </ul>
 
             
@@ -175,8 +175,10 @@
 </style>
 <div class="section" id="chicago-crime-data-documentation">
 <h1>Chicago Crime Data documentation<a class="headerlink" href="#chicago-crime-data-documentation" title="Permalink to this headline">¶</a></h1>
-<p>This dataset reflects reported incidents of crime (with the exception of murders where data exists for each victim) that occurred in the City of Chicago from 2001 to present, minus the most recent seven days. Data is extracted from the Chicago Police Department’s CLEAR (Citizen Law Enforcement Analysis and Reporting) system.</p>
-<p>An exploration of reported Chicago Crime data</p>
+<p>An exploration of reported Chicago Crime data. This dataset reflects reported incidents of crime (with the exception of murders where data exists for each victim) that occurred in the City of Chicago from 2001 to present, minus the most recent seven days. Data is extracted from the Chicago Police Department’s CLEAR (Citizen Law Enforcement Analysis and Reporting) system.</p>
+<p>This report visually explores the data for trends. It also looks for trends using PCA and Gaussian Mixture Models. Through the latter, we see the crime reporting behaves in two distinct patterns: Weekday and Weekend. Weekday crime reporting tends to peak around noon. For Weekends, the flux of crime reports is steady throughout the day.</p>
+<p>However, we do see some weekdays behave like weekends, and conversely, some weekends behave like weekdays. Specifically, there are Tuesdays that behave like weekends, i.e. more crime is reported. Some of those happen to be Christmas, New Years, and July 4th—American holidays. And the two Sundays that behaved like weekdays coincide with playoff games, which might say more about Chicagoans than it’s reported crime rates do.</p>
+<p>In summary, more crimes are reported (or perhaps committed?) during hours of leisure.</p>
 <p>Code on <a class="reference external" href="https://github.com/caheredia/chicago_crime_data/">github</a></p>
 <p>Contents:</p>
 <div class="toctree-wrapper compound">
@@ -200,10 +202,18 @@
 <p>Jupyter notebook contents:</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="0.1-cristian-Chicago_Crime.html">Load data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="0.1-cristian-Chicago_Crime.html#PCA-analysis">PCA analysis</a></li>
-<li class="toctree-l1"><a class="reference internal" href="0.1-cristian-Chicago_Crime.html#Weekend-behaviors">Weekend behaviors</a></li>
-<li class="toctree-l1"><a class="reference internal" href="0.1-cristian-Chicago_Crime.html#Weekday-behaviors">Weekday behaviors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="0.1-cristian-Chicago_Crime.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="0.1-cristian-Chicago_Crime.html#Load-data">Load data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="0.1-cristian-Chicago_Crime.html#Visually-Explore-Data">Visually Explore Data</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="0.1-cristian-Chicago_Crime.html#Monthly-crime-reports-over-all-collected-data">Monthly crime reports over all collected data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="0.1-cristian-Chicago_Crime.html#Crime-reports-for-every-day-of-data-as-a-function-of-time-of-day">Crime reports for every day of data as a function of time of day</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="0.1-cristian-Chicago_Crime.html#Modeling">Modeling</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="0.1-cristian-Chicago_Crime.html#PCA-analysis">PCA analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="0.1-cristian-Chicago_Crime.html#Gaussian-Mixture-Models">Gaussian Mixture Models</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
